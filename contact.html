@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Join the Lab | The Leader Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Register interest in The Leader Lab retail leadership workshops." />
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="panel">
+  <header class="nav">
+    <div class="brand">⚗️ The Leader Lab</div>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="panel" style="max-width:680px">
+    <h1>Join The Leader Lab</h1>
+    <p id="faq">Tell us a bit about you and the workshop you’re interested in. We’ll reply within 1–2 business days.</p>
+
+    <!-- Formspree: replace YOUR_FORM_ID and set your thanks page -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="cards">
+      <input type="hidden" name="_subject" value="New Leader Lab Inquiry">
+      <input type="hidden" name="_redirect" value="https://YOUR-USERNAME.github.io/leader-lab/thanks.html">
+
+      <label>Full Name
+        <input type="text" name="name" required aria-label="Full Name" />
+      </label>
+      <label>Email
+        <input type="email" name="email" required aria-label="Email" />
+      </label>
+      <label>Company/School
+        <input type="text" name="org" aria-label="Company or School" />
+      </label>
+      <label>Workshop Interest
+        <select name="interest" aria-label="Workshop Interest">
+          <option> Aspiring Leaders </option>
+          <option> Store Managers </option>
+          <option> Corporate Partners </option>
+        </select>
+      </label>
+      <label>Message
+        <textarea name="message" rows="5" placeholder="Dates, goals, questions…" aria-label="Message"></textarea>
+      </label>
+      <button class="btn neon" type="submit" data-cta="submit_form">Submit & Join the Lab</button>
+    </form>
+
+    <p style="margin-top:16px;opacity:.8">Prefer a quick chat? Email us at <a href="mailto:hello@theleaderlab.example">hello@theleaderlab.example</a></p>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> The Leader Lab • <a href="index.html">Back to Home</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
